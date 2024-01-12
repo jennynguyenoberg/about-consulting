@@ -1,0 +1,7 @@
+# Ignore specific files
+config.js
+package-lock.json
+
+# Ignore a directory and its contents
+node_modules/
+dist/
