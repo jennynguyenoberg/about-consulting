@@ -1,3 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Fasthand&family=Koulen&family=Syne:wght@400;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Font styles */
+  --font-body: 'Syne', sans-serif;
+  --font-headings: 'Syne', sans-serif;
+  --font-italic: 'EB Garamond', serif;
+  --font-tagline: 'Fasthand', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-headings);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4.2rem;
+  font-weight: 800;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 0.96rem;
+}
+
+h4 {
+  font-size: 0.75rem;
+}
+
+h5 {
+  font-size: 0.65rem;
+}
+
+span {
+  font-family: var(--font-tagline);
+  font-size: 2.25rem;
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+em {
+  font-family: var(--font-italic);
+  font-size: 3.25rem;
+  line-height: 4rem;
+}
