@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Syne } from 'next/font/google'
-import './globals.css'
+import Head from 'next/head'
+import '../globals.css'
+import Navbar from './components/Navbar/Navbar'
 
 const syne = Syne({ subsets: ['latin'] })
 
@@ -17,7 +19,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={syne.className}>{children}</body>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <body className={syne.className}>
+        <div className="bg-apricot-500">
+          <Navbar />
+          {children}
+        </div>
+      </body>
     </html>
   )
 }
