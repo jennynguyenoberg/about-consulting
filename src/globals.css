@@ -71,3 +71,7 @@ em {
   font-size: 3.25rem;
   line-height: 4rem;
 }
+
+button {
+  padding: 2em;
+}

@@ -17,7 +17,7 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"],
-      "@/pages/*": ["pages/*"],
+      "@/pages/*": ["src/app/pages/*"],
       "@/styles/*": ["styles/*"]
     },
     "plugins": [
@@ -31,7 +31,8 @@
     "**/*.ts",
     "**/*.tsx",
     "types.d.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/app/about/page.tsx"
   ],
   "exclude": ["node_modules"]
 }
