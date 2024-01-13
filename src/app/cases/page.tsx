@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Cases',
+  // description: "",
+}
 export default function Cases() { 
   return (
     <div>

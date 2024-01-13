@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Kontakt',
+  // description: "",
+}
+
 export default function Kontakt() { 
   return (
     <div>

@@ -9,7 +9,7 @@ const syne = Syne({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'About Consulting',
   description:
-    'Optimize color choices for readability with the Color Contrast Checker (CCC).',
+    'Tagline for About Consulting',
 }
 
 export default function RootLayout({

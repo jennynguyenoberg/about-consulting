@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'FAQ',
+  // description: "",
+}
+
 export default function FAQ() { 
   return (
     <div>
