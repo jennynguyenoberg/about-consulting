@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className='fixed w-full'>
+    <nav className='fixed w-full bg-apricot-500'>
       <div className="px-11 py-4 flex justify-between border-b-2 border-salmon-500 gap-16">
         <div className="flex items-center">
           <Link href="/">
@@ -18,17 +18,17 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div>
+          {/* <div>
             <Link href="/cases">
               <h4 className="text-aubergine-500 hover:underline">Cases</h4>
             </Link>
-          </div>
+          </div> */}
 
-          <div>
+          {/* <div>
             <Link href="/faq">
               <h4 className="text-aubergine-500 hover:underline">FAQ</h4>
             </Link>
-          </div>
+          </div> */}
 
           <div>
             <Link href="/kontakt">
