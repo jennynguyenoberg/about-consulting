@@ -3,6 +3,7 @@ import { Syne } from 'next/font/google'
 import Head from 'next/head'
 import '../globals.css'
 import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
 
 const syne = Syne({ subsets: ['latin'] })
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <div className="bg-apricot-500">
           <Navbar />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
