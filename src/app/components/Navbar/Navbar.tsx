@@ -18,17 +18,17 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div>
+          {/* <div>
             <Link href="/cases">
               <h4 className="text-aubergine-500 hover:underline">Cases</h4>
             </Link>
-          </div>
+          </div> */}
 
-          <div>
+          {/* <div>
             <Link href="/faq">
               <h4 className="text-aubergine-500 hover:underline">FAQ</h4>
             </Link>
-          </div>
+          </div> */}
 
           <div>
             <Link href="/kontakt">
