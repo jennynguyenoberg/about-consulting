@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className='fixed w-full bg-apricot-500'>
-      <div className="px-11 py-4 flex justify-between border-b-2 border-salmon-500 gap-16">
+    <nav className='fixed w-full bg-apricot-500 z-50'>
+      <div className="px-11 py-5 flex justify-between border-b-2 border-salmon-500 gap-16">
         <div className="flex items-center">
           <Link href="/">
             <Image src="/logo.svg" alt="Logo" width={62} height={62} />
