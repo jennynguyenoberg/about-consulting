@@ -1,22 +1,27 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-aubergine-500 text-salmon-500 px-11 py-14">
+    <footer className="bg-aubergine-500 text-salmon-500 px-14 py-14">
       <div className="pb-40">
-        <Image src="/logomark.svg" alt="Logo" width={62} height={62} />
+        <Image src="/logomark.svg" alt="Logomark" width={62} height={62} />
       </div>
 
       <div className="flex justify-between">
-        <div>
-          <h3 className="mb-3">About consulting</h3>
-          <p>Taking FMCG to the next level</p>
-          <p>Local time 15:07</p>
-          <p>© 2024 About Consulting. All Rights Reserved.</p>
+        <div className="flex flex-col justify-between gap-16">
+          <div>
+            <h3 className="mb-2">About consulting</h3>
+            <p>Taking FMCG to the next level</p>
+          </div>
+          <div>
+            <p>Lokal tid Stockholm 15:07</p>
+            <p>© 2024 About Consulting. All Rights Reserved.</p>
+          </div>
         </div>
         
         <div>
-          <h3 className="mb-3">Tjänster</h3>
+          <h3 className="mb-2">Tjänster</h3>
           <ul>
             <li>Projekt</li>
             <li>Interimlösningar</li>
@@ -26,17 +31,37 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-3">Social</h3>
+          <h3 className="mb-2">Socials</h3>
           <ul>
-            <li>Instagram</li>
-            <li>LinkedIn</li>
+            <li className="hover:underline">
+              <Link href={'https://www.instagram.com/aboutconsulting.se/'}>
+                Instagram
+              </Link>
+            </li>
+            <li className="hover:underline">
+              <Link href={'https://www.linkedin.com/company/about-consulting-ab/'}>
+                LinkedIn
+              </Link>
+            </li>
           </ul>
         </div>
 
         <div>
-          <h3 className="mb-3">Nyhetsbrev</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
-
+          <h3 className="mb-2">Bli kontaktad</h3>
+          <p className="mb-14">Ska vi kontakta dig?</p>
+          <div>
+            <form className="space-y-6 flex items-center" action="#" method="POST">
+              <div>
+                <div className="mt-6">
+                  <input id="email" name="email" type="email" placeholder="Mailadress"required className="pr-28 border-b-2 focus:outline-none placeholder:text-salmon-500 bg-aubergine-500" />
+                </div>
+              </div>
+              
+              <div>
+                <button type="submit" className="w-full py-0 px-0 border-b-2 bg-aubergine-500 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-salmon-500">Skicka</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
