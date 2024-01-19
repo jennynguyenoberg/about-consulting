@@ -1,5 +1,5 @@
 import Hero from './components/Hero/Hero'
-import USPs from './components/USPs/Usps'
+import USPs from './components/USPs/USPs'
 
 export default function Home() {
   return (
