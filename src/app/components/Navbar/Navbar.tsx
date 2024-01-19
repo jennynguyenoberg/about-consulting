@@ -32,7 +32,7 @@ export default function Navbar() {
 
           <div>
             <Link href="/kontakt">
-              <button className="text-aubergine-500 px-12 py-3 border-aubergine-500 border-solid border-2 rounded-2xl hover:bg-aubergine-500 hover:text-apricot-500">
+              <button className="text-aubergine-500 px-12 py-1 border-aubergine-500 border-solid border-2 rounded-xl hover:bg-aubergine-500 hover:text-apricot-500">
                 <h4>Kontakt</h4>
               </button>
             </Link>
