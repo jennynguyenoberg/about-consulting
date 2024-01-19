@@ -1,4 +1,5 @@
 import Hero from './components/Hero/Hero'
+import ImageCarousel from './components/ImageCarousel/ImageCarousel'
 import USPs from './components/USPs/USPs'
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <div>
         <Hero />
         <USPs />
+        <ImageCarousel />
       </div>
     </main>
   )
