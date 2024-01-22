@@ -6,7 +6,7 @@ export default function Vision() {
     <section>
       <div className="flex text-aubergine-500 justify-center items-center border-b-2 border-salmon-500">
         <div className="py-36 px-36 w-1/2 bg-salmon-500 text-center flex items-center flex-col">
-          <Image src="/marika_profile.jpg" alt="Marika Hjorth" width={135} height={135} className="rounded-full" />
+          <Image src="/marika_profile.jpg" alt="Profile image of Marika Hjorth" width={135} height={135} className="rounded-full" />
           <p className="text-5xl mt-5">
             "Lorum ipsum<em> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</em>"
           </p>

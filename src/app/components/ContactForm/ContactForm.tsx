@@ -14,7 +14,7 @@ if (!supabaseUrl || !supabaseKey) {
 
 const supabase: SupabaseClient = createClient(supabaseUrl, supabaseKey);
 
-export default function Contact() {
+export default function ContactForm() {
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
@@ -24,7 +24,7 @@ export default function Contact() {
     e.preventDefault();
 
     try {
-      const { data, error } = await supabase.from('contacts').insert([
+      const { data, error } = await supabase.from('contact-form').insert([
         { name, email, message },
       ]);
 
@@ -46,7 +46,7 @@ export default function Contact() {
   return (
     <div className='text-aubergine-500 flex flex-col gap-16'>
       <div>
-        <h2>Kontakta oss</h2>
+        <h2 className='text-4xl'>Kontakta oss</h2>
         <p className='mt-5'>{`
           Vill du veta mer om våra tjänster eller har övriga frågor? Skicka iväg ett meddelande så svarar vi så snart vi kan!
         `}

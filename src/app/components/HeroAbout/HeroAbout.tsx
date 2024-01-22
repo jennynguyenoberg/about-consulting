@@ -6,7 +6,7 @@ export default function HeroAbout() {
       <h2 className="text-5xl mb-20">Våra tjänster</h2>
       <div className="flex gap-20 justify-center items-center">
         <div className="w-1/2">
-          <Image src="/photo.jpg" alt="Logo" width={700} height={162} className="rounded-3xl" />
+          <Image src="/photo.jpg" alt="Image of grocery store check-out" width={700} height={162} className="rounded-3xl" />
         </div>
         <div className="w-1/2 pr-10 flex gap-5 flex-col">
           <p>Vi specialicerar på projekt, interimslöningar samt utbildningar & workshops för dagligvaruhandeln och retailsektorn. </p>
