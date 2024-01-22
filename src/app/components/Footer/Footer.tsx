@@ -60,12 +60,12 @@ export default function Footer() {
           <h3 className="mb-2">Socials</h3>
           <ul>
             <li className="hover:underline">
-              <Link href={'https://www.instagram.com/aboutconsulting.se/'}>
+              <Link href={'https://www.instagram.com/aboutconsulting.se/'} target="_blank" rel="noopener noreferrer">
                 Instagram
               </Link>
             </li>
             <li className="hover:underline">
-              <Link href={'https://www.linkedin.com/company/about-consulting-ab/'}>
+              <Link href={'https://www.linkedin.com/company/about-consulting-ab/'} target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </Link>
             </li>
