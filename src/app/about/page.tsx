@@ -1,4 +1,5 @@
 import HeroAbout from "../components/HeroAbout/HeroAbout"
+import USPAbout from "../components/USPAbout/USPAbout"
 
 export const metadata = {
   title: 'About',
@@ -7,6 +8,9 @@ export const metadata = {
 
 export default function About() { 
   return (
-    <HeroAbout />
+    <main>
+      <HeroAbout />
+      <USPAbout />
+    </main>
   )
 }
