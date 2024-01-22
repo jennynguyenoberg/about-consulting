@@ -1,7 +1,33 @@
+'use client'
+import { useState, FormEvent } from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import { supabase } from "../../utils/supabase"; // Adjust the path accordingly
 
 export default function Footer() {
+  const [email, setEmail] = useState<string>('');
+  const [submitted, setSubmitted] = useState<boolean>(false);
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const { data, error } = await supabase.from('contact-footer').insert([
+        { email },
+      ]);
+
+      if (error) {
+        console.error('Error inserting data:', error);
+      } else {
+        console.log('Data inserted successfully:', data);
+        setEmail('');
+        setSubmitted(true);
+      }
+    } catch (error) {
+      console.error('Error connecting to Supabase:', error);
+    }
+  };
+
   return (
     <footer className="bg-aubergine-500 text-salmon-500 px-14 py-14">
       <div className="pb-40">
@@ -50,15 +76,28 @@ export default function Footer() {
           <h3 className="mb-2">Bli kontaktad</h3>
           <p className="mb-14">Ska vi kontakta dig?</p>
           <div>
-            <form className="space-y-6 flex items-center" action="#" method="POST">
+            <form className="space-y-6 flex items-center" onSubmit={handleSubmit}>
               <div>
                 <div className="mt-6">
-                  <input id="email" name="email" type="email" placeholder="Mailadress"required className="pr-28 border-b-2 focus:outline-none placeholder:text-salmon-500 bg-aubergine-500" />
+                  <input
+                    className="pr-28 border-b-2 focus:outline-none placeholder:text-salmon-500 bg-aubergine-500"
+                    type="email"
+                    id="email"
+                    value={email}
+                    placeholder='din@adress.se'
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
                 </div>
               </div>
               
               <div>
-                <button type="submit" className="w-full py-0 px-0 border-b-2 bg-aubergine-500 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-salmon-500">Skicka</button>
+              <button
+                className="w-full py-0 px-0 border-b-2 bg-aubergine-500 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-salmon-500"
+                type="submit"
+                disabled={submitted}>
+                {submitted ? 'Skickat ✔' : 'Skicka'}
+              </button>
               </div>
             </form>
           </div>

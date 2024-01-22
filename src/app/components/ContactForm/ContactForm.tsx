@@ -1,18 +1,6 @@
 'use client'
 import { useState, FormEvent } from 'react';
-import { createClient, SupabaseClient } from '@supabase/supabase-js';
-import { config } from 'dotenv';
-
-config();
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_KEY;
-
-if (!supabaseUrl || !supabaseKey) {
-  throw new Error('Supabase URL or API key not provided.');
-}
-
-const supabase: SupabaseClient = createClient(supabaseUrl, supabaseKey);
+import { supabase } from '../../utils/supabase'; // Adjust the path accordingly
 
 export default function ContactForm() {
   const [name, setName] = useState<string>('');
@@ -94,7 +82,7 @@ export default function ContactForm() {
             className=""
             type="submit"
             disabled={submitted}>
-            {submitted ? '✔ Skickat' : '↳ Skicka'}
+            {submitted ? 'Skickat ✔' : '↳ Skicka'}
           </button>
           {/* <div>
             {submitted && <p className=''>✔ Tack för ditt meddelande. Vi svarar så snart vi kan!</p>}
@@ -104,3 +92,4 @@ export default function ContactForm() {
     </div>
   );
 }
+
