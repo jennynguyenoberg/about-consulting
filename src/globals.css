@@ -22,7 +22,8 @@ h2,
 h3,
 h4,
 h5,
-button {
+button,
+label {
   font-family: var(--font-headings);
   text-transform: uppercase;
   font-weight: 700;
@@ -46,7 +47,8 @@ h4 {
   font-size: 0.75rem;
 }
 
-h5 {
+h5,
+label {
   font-size: 0.65rem;
 }
 
