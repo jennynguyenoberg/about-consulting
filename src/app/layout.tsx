@@ -25,7 +25,7 @@ export default function RootLayout({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <body className={syne.className}>
-        <div className="bg-apricot-500">
+        <div className="bg-apricot-500 selection:bg-salmon-300">
           <Navbar />
           {children}
           <Footer />
