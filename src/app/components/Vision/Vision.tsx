@@ -1,5 +1,4 @@
 import Image from "next/image";
-import CTA from "../CTA/CTA";
 
 export default function Vision() {
   return (
@@ -19,7 +18,6 @@ export default function Vision() {
           <p className="text-3xl">Diam donec adipiscing tristique risus nec fe ugiat inquam vulputate dignissim.</p>
         </div>
       </div>
-      <CTA />
     </section>
   )
 }

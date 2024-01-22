@@ -1,3 +1,4 @@
+import CTAAbout from "../components/CTAAbout/CTAAbout"
 import ContactSection from "../components/ContactSection/ContactSection"
 import HeroAbout from "../components/HeroAbout/HeroAbout"
 import USPAbout from "../components/USPAbout/USPAbout"
@@ -14,6 +15,7 @@ export default function About() {
       <HeroAbout />
       <USPAbout />
       <Vision />
+      <CTAAbout />
       <ContactSection />
     </main>
   )
