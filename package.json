@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.3",
+    "date-fns": "^3.3.1",
     "dotenv": "^16.3.2",
     "eslint": "^8.56.0",
     "next": "latest",

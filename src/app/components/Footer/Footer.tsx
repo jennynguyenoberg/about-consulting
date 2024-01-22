@@ -1,12 +1,14 @@
 'use client'
-import { useState, FormEvent } from 'react';
+import { useState, FormEvent, useEffect } from 'react';
+import { format } from 'date-fns';
+import { supabase } from "../../utils/supabase";
 import Image from "next/image";
 import Link from "next/link";
-import { supabase } from "../../utils/supabase"; // Adjust the path accordingly
 
 export default function Footer() {
   const [email, setEmail] = useState<string>('');
   const [submitted, setSubmitted] = useState<boolean>(false);
+  const [localTime, setLocalTime] = useState<string>('');
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -28,6 +30,22 @@ export default function Footer() {
     }
   };
 
+  useEffect(() => {
+    // Function to update the local time
+    const updateLocalTime = () => {
+      const localTimeString = format(new Date(), 'HH:mm', { timeZone: 'Europe/Stockholm' } as any);
+      setLocalTime(localTimeString);
+    };
+    // Update the local time initially
+    updateLocalTime();
+
+    // Update the local time every minute
+    const intervalId = setInterval(updateLocalTime, 60000);
+
+    // Clear the interval on component unmount
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <footer className="bg-aubergine-500 text-salmon-500 px-14 py-14">
       <div className="pb-40">
@@ -41,7 +59,7 @@ export default function Footer() {
             <p>Taking FMCG to the next level</p>
           </div>
           <div>
-            <p>Lokal tid Stockholm 15:07</p>
+            <p>Lokal tid Stockholm {localTime}</p>
             <p>© 2024 About Consulting. All Rights Reserved.</p>
           </div>
         </div>
