@@ -1,3 +1,4 @@
+import CTA from './components/CTA/CTA'
 import Hero from './components/Hero/Hero'
 import ImageCarousel from './components/ImageCarousel/ImageCarousel'
 import MissionText from './components/MissionText/MissionText'
@@ -11,6 +12,7 @@ export default function Home() {
         <USPs />
         <ImageCarousel />
         <MissionText />
+        <CTA />
       </div>
     </main>
   )
