@@ -44,16 +44,19 @@ export default function Contact() {
   };
 
   return (
-    <div className='text-aubergine-500'>
-      <h2>Kontakta oss</h2>
-      <p className=''>{`
-        Vill du veta mer om våra tjänster eller har övriga frågor? Skicka iväg ett meddelande så svarar vi så snart vi kan!
-      `}
-      </p>
-      <form onSubmit={handleSubmit}>
-        <div className=''>
+    <div className='text-aubergine-500 flex flex-col gap-16'>
+      <div>
+        <h2>Kontakta oss</h2>
+        <p className='mt-5'>{`
+          Vill du veta mer om våra tjänster eller har övriga frågor? Skicka iväg ett meddelande så svarar vi så snart vi kan!
+        `}
+        </p>
+      </div>
+      <form className='flex flex-col gap-10' onSubmit={handleSubmit}>
+        <div className='flex flex-col gap-3'>
           <label htmlFor="name">Namn</label>
           <input
+            className='bg-apricot-500 pr-28 border-b-2 focus:outline-none placeholder:text-aubergine-500 text-lg'
             type="text"
             id="name"
             value={name}
@@ -62,9 +65,10 @@ export default function Contact() {
             required
           />
         </div>
-        <div className=''>
+        <div className='flex flex-col gap-3'>
           <label htmlFor="email">Email</label>
           <input
+            className='bg-apricot-500 pr-28 border-b-2 focus:outline-none placeholder:text-aubergine-500 text-lg'
             type="email"
             id="email"
             value={email}
@@ -73,11 +77,13 @@ export default function Contact() {
             required
           />
         </div>
-        <div className=''>
+        <div className=' flex flex-col gap-3'>
           <label htmlFor="message">Meddelande</label>
           <textarea
+            className='bg-apricot-500 pr-28 border-b-2 focus:outline-none placeholder:text-aubergine-500 text-lg'
             id="message"
             value={message}
+            style={{ height: '100px', resize: 'none' }}
             placeholder='Skriv ditt meddelande'
             onChange={(e) => setMessage(e.target.value)}
             required
@@ -88,7 +94,7 @@ export default function Contact() {
             className=""
             type="submit"
             disabled={submitted}>
-            {submitted ? 'Skickat' : 'Skicka'}
+            {submitted ? '✔ Skickat' : '↳ Skicka'}
           </button>
           {/* <div>
             {submitted && <p className=''>✔ Tack för ditt meddelande. Vi svarar så snart vi kan!</p>}
