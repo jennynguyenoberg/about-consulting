@@ -12,7 +12,7 @@
 .words span {
     display: block;
     height: 130%;
-    padding-left: 4rem;
+    padding-left: 2.5rem;
     animation: spin_words 10s infinite;
 }
 
