@@ -1,5 +1,6 @@
 import HeroAbout from "../components/HeroAbout/HeroAbout"
 import USPAbout from "../components/USPAbout/USPAbout"
+import Vision from "../components/Vision/Vision"
 
 export const metadata = {
   title: 'About',
@@ -11,6 +12,7 @@ export default function About() {
     <main>
       <HeroAbout />
       <USPAbout />
+      <Vision />
     </main>
   )
 }
