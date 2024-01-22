@@ -12,7 +12,7 @@ export default function Vision() {
           </p>
           <h4 className="pt-10">— Marika Hjorth, Medgrundare & VD</h4>
         </div>
-        <div className="px-24 w-1/2 flex gap-15 flex-col">
+        <div className="px-24 w-1/2 flex gap-8 flex-col">
           <h4>Hur vi jobbar</h4>
           <p className="text-3xl mb-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           <h4>Vår approach</h4>
