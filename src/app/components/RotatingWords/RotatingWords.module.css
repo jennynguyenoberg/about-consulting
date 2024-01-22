@@ -1,0 +1,44 @@
+.wrapper {
+    box-sizing: content-box;
+    height: 180px;
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.words {
+    overflow: hidden;
+}
+
+.words span {
+    display: block;
+    height: 130%;
+    padding-left: 4rem;
+    animation: spin_words 10s infinite;
+}
+
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}

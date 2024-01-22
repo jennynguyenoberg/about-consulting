@@ -29,7 +29,8 @@ label {
   font-weight: 700;
 }
 
-h1 {
+h1,
+span {
   font-family: 'Koulen', serif;
   font-size: 10rem;
 }
