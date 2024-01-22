@@ -9,7 +9,7 @@
     overflow: hidden;
 }
 
-.words span {
+.words h1 {
     display: block;
     height: 130%;
     padding-left: 2.5rem;

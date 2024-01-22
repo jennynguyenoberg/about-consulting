@@ -7,12 +7,12 @@ export default function RotatingWords() {
       <h1 className='text-aubergine-500'>About</h1>
       <div className={styles.words}>
         <div className='text-salmon-500'>
-          <span>Apples</span>
-          <span>Consulting</span>
-          <span>Sausages</span>
-          <span>Schampoo</span>
-          <span>Milk</span>
-          <span>Eggs</span>
+          <h1>Apples</h1>
+          <h1>Consulting</h1>
+          <h1>Sausages</h1>
+          <h1>Schampoo</h1>
+          <h1>Milk</h1>
+          <h1>Eggs</h1>
         </div>
       </div>
     </div>
