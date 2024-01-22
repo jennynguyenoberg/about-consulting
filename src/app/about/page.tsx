@@ -1,4 +1,4 @@
-import Contact from "../components/Contact/Contact"
+import ContactSection from "../components/ContactSection/ContactSection"
 import HeroAbout from "../components/HeroAbout/HeroAbout"
 import USPAbout from "../components/USPAbout/USPAbout"
 import Vision from "../components/Vision/Vision"
@@ -14,7 +14,7 @@ export default function About() {
       <HeroAbout />
       <USPAbout />
       <Vision />
-      <Contact />
+      <ContactSection />
     </main>
   )
 }
