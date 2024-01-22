@@ -1,3 +1,5 @@
+import HeroContact from "../components/HeroContact/HeroContact"
+
 export const metadata = {
   title: 'Kontakt',
   // description: "",
@@ -5,8 +7,8 @@ export const metadata = {
 
 export default function Kontakt() { 
   return (
-    <div>
-      <h3>Kontakt</h3>
-    </div>
+    <main>
+      <HeroContact />
+    </main>
   )
 }
