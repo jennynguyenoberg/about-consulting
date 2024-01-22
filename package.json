@@ -8,6 +8,8 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.39.3",
+    "dotenv": "^16.3.2",
     "eslint": "^8.56.0",
     "next": "latest",
     "prettier": "^3.1.1",
