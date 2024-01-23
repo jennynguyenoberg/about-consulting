@@ -10,6 +10,12 @@
   box-sizing: border-box;
 }
 
+body{
+  margin: 0px;
+  overflow: hidden; /* Hide scrollbars */
+  /* cursor: wait; Add after Preloader*/
+}
+
 :root {
   /* Font styles */
   --font-body: 'Syne', sans-serif;
