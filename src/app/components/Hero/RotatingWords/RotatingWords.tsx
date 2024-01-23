@@ -1,4 +1,3 @@
-
 import styles from './RotatingWords.module.css'
 
 export default function RotatingWords() { 

@@ -1,7 +1,14 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import NavbarButton from './NavbarButton/NavbarButton'
+import styles from './Navbar.module.scss'
+import { useState } from 'react'
 
 export default function Navbar() {
+  const [isActive, setIsActive] = useState(false)
+
+
   return (
     <nav className='fixed w-full bg-apricot-500 z-50'>
       <div className="px-11 py-5 flex justify-between border-b-2 border-salmon-500 gap-16">
@@ -38,8 +45,8 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div>
-            <Image src="/hamburger.svg" alt="Menu" width={18} height={18} />
+          <div className={styles.header}>
+            <NavbarButton isActive={isActive} setIsActive={setIsActive} />
           </div>
         </div>
       </div>

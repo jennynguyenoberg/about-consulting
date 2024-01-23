@@ -1,0 +1,27 @@
+.button {
+  font-family: 'Syne', serif;
+  font-weight: 600;
+  height: 40px;
+  width: 100px;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  // overflow: hidden;
+  
+  .element {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    &:nth-of-type(2) {
+      position: absolute;
+      top: 100%;
+      background-color: green;
+    }
+  }
+}
+

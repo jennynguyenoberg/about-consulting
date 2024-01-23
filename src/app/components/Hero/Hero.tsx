@@ -1,5 +1,4 @@
-import Image from "next/image";
-import RotatingWords from "../RotatingWords/RotatingWords";
+import RotatingWords from "./RotatingWords/RotatingWords";
 
 export default function Hero() { 
   return (
