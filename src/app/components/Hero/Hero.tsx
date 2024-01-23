@@ -1,11 +1,31 @@
+'use client';
+import React, { useLayoutEffect, useRef } from 'react'
+import styles from './Hero.module.scss';
+import Image from 'next/image';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import RotatingWords from "./RotatingWords/RotatingWords";
 
 export default function Hero() { 
+  const background = useRef(null);
+
+    useLayoutEffect( () => {
+        gsap.registerPlugin(ScrollTrigger);
+    }, [])
+  
   return (
-    <div>
-      <section className="h-screen flex justify-center items-center bg-[url('/bkg.svg')] border-b-2 border-salmon-500">
-        <RotatingWords />
-      </section>
-    </div>
+      <div className={styles.homeHeader}>
+          <div className={styles.backgroundImage} ref={background}>
+              <Image 
+                  src={'/bkg.svg'}
+                  fill={true}
+                  alt="background image"
+                  priority={true}
+              />
+          </div>
+      <div className={styles.intro}>
+        <h1 data-scroll data-scroll-speed="0.7"><RotatingWords /></h1>
+           </div>
+      </div>
   )
 }

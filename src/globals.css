@@ -11,9 +11,8 @@
 }
 
 body{
-  margin: 0px;
-  overflow: hidden; /* Hide scrollbars */
-  /* cursor: wait; Add after Preloader*/
+  overflow: hidden;
+  cursor: wait;
 }
 
 :root {
