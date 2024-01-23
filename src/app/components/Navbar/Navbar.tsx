@@ -1,7 +1,33 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import NavbarButton from './NavbarButton/NavbarButton'
+import styles from './Navbar.module.scss'
+import { useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
+import NavItems from './NavItems/NavItems'
+
+const variants = {
+  open: {
+    width: 480,
+    height: 650,
+    top: '-25px',
+    right: '-25px',
+    transition: { duration: 0.75, ease: [0.76, 0, 0.24, 1] }
+  },
+  closed: {
+    width: 40,
+    height: 40,
+    top: '0px',
+    right: '0px',
+    transition: { duration: 0.75, delay: 0.35, ease: [0.76, 0, 0.24, 1] }
+  }
+}
 
 export default function Navbar() {
+  const [isActive, setIsActive] = useState(false)
+
+
   return (
     <nav className='fixed w-full bg-apricot-500 z-50'>
       <div className="px-11 py-5 flex justify-between border-b-2 border-salmon-500 gap-16">
@@ -37,9 +63,20 @@ export default function Navbar() {
               </button>
             </Link>
           </div>
+          <div className='pr-10'/>
 
-          <div>
-            <Image src="/hamburger.svg" alt="Menu" width={18} height={18} />
+          <div className={styles.header}>
+            <motion.div
+              className={styles.menu}
+              variants={variants}
+              animate={isActive ? 'open' : 'closed'}
+              initial='closed'
+            >
+              <AnimatePresence>
+                {isActive && <NavItems />}
+              </AnimatePresence>
+            </motion.div>
+            <NavbarButton isActive={isActive} setIsActive={setIsActive} />
           </div>
         </div>
       </div>
