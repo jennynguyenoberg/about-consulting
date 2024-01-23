@@ -1,5 +1,13 @@
 .header {
-  position: relative;
-  right: 0;
-  top: 0;
+  position: absolute;
+  right: 45px;
+  top: 45px;
+
+  .menu {
+    background-color: #004650;
+    position: relative;
+    width: 480px;
+    height: 650px;
+    border-radius: 25px;
+  }
 }

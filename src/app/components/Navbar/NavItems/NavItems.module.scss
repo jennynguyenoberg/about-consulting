@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 100px 40px 50px 40px;
+  box-sizing: border-box;
+
+  .body {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    a {
+      color: #DEE0E9;
+      text-decoration: none;
+      font-size: 40px;
+    }
+
+    a:hover {
+      border-bottom: 2px solid;
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      width: 50%;
+      color: #DEE0E9;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
