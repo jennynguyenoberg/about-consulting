@@ -12,7 +12,7 @@
 .words h1 {
     display: block;
     height: 130%;
-    padding-left: 2rem;
+    padding-left: 1rem;
     animation: spin_words 10s infinite;
 }
 
