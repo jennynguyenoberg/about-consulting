@@ -39,8 +39,8 @@ export default function Navbar() {
 
         <div className="flex items-center gap-16">
           <div>
-            <Link href="/about">
-              <h4 className="text-aubergine-500 hover:underline">About</h4>
+            <Link href="/tjanster">
+              <h4 className="text-aubergine-500 hover:underline">Våra tjänster</h4>
             </Link>
           </div>
 

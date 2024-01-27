@@ -34,7 +34,8 @@ export default function HeroContact() {
         <div className="w-1/2 flex flex-col items-start pr-36">
           <h2>Marika Hjorth</h2>
           <em className='text-xl mb-5'>Medgrundare & VD</em>
-          <p className="text-xl mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p className="text-xl mb-8">Strateg och grundare med en omfattande meritlista inom FMCG, ledarskap och strategisk tillväxt. Tidigare erfarenhet som sortiment- och inköpschef på den snabbväxande startupen Kavall samt mångårig erfarenhet av inköp, Category Management, produktutveckling och teamledning på bolag som Lidl och ICA.</p>
+          <p className="text-xl mb-8">Marika är också "about" sin familj och cocker spanieln Madde, att sjunga och upptäcka världens alla hörn!</p>
           <button id="contactButton" className="underline">
             Kontakta mig
           </button>

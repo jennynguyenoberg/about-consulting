@@ -62,7 +62,11 @@ label {
   font-size: 2.25rem;
 } */
 
-p, 
+p {
+  font-size: 1.1rem;
+  line-height: 1.55rem;
+} 
+
 input, 
 li, 
 button {
