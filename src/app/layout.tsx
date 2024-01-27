@@ -10,7 +10,8 @@ const syne = Syne({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'About Consulting',
   description:
-    'Taking FMCG to the next level',
+    // 'Taking FMCG to the next level',
+    'About Consulting',
 }
 
 export default function RootLayout({

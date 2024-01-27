@@ -1,4 +1,4 @@
-import CTAContactSection from "../components/CTAContact/CTAContact"
+// import CTAContactSection from "../components/CTAContact/CTAContact"
 import ContactSection from "../components/ContactSection/ContactSection"
 import HeroContact from "../components/HeroContact/HeroContact"
 
@@ -11,7 +11,7 @@ export default function Kontakt() {
   return (
     <main>
       <HeroContact />
-      <CTAContactSection />
+      {/* <CTAContactSection /> */}
       <ContactSection />
     </main>
   )

@@ -56,11 +56,13 @@ export default function Footer() {
         <div className="flex flex-col justify-between gap-16">
           <div>
             <h3 className="mb-2">About consulting</h3>
-            <p>Taking FMCG to the next level</p>
+            {/* <p>Taking FMCG to the next level</p> */}
           </div>
           <div>
-            <p>Lokal tid Stockholm {localTime}</p>
-            <p>© 2024 About Consulting. All Rights Reserved.</p>
+            <ul>
+              <li>Lokal tid Stockholm {localTime}</li>
+              <li>© 2024 About Consulting. All Rights Reserved.</li>
+            </ul>
           </div>
         </div>
         
@@ -92,7 +94,9 @@ export default function Footer() {
 
         <div>
           <h3 className="mb-2">Bli kontaktad</h3>
-          <p className="mb-14">Ska vi kontakta dig?</p>
+          <ul>
+            <li className="mb-14">Ska vi kontakta dig?</li>
+          </ul>
           <div>
             <form className="space-y-6 flex items-center" onSubmit={handleSubmit}>
               <div>

@@ -8,10 +8,10 @@ export default function HeroAbout() {
         <div className="w-1/2">
           <Image src="/photo.jpg" alt="Image of grocery store check-out" width={700} height={162} className="rounded-3xl" />
         </div>
-        <div className="w-1/2 pr-10 flex gap-5 flex-col">
-          <p>Vi specialicerar på projekt, interimslöningar samt utbildningar & workshops för dagligvaruhandeln och retailsektorn. </p>
-          <p>Med xx års erfarenhet från dagligvarukedjor, leverantörssidan och restaurang har vi en djup och full förståelse för branschen och de utmaningar olika spelare kan ha. </p>
-          <p>Tillsammans med våra kunder skapar vi värde, lönsamhet och driver innovation i en snabbrörlig värld!</p>
+        <div className="w-1/2 px-16 flex gap-5 flex-col">
+          <p>About specialiserar sig på projekt, interimslösningar samt kompetensutveckling inom retail och dagligvaruhandeln.</p>
+          <p>Med mångårig erfarenhet från dagligvarukedjor, leverantörer och restauranger har vi en omfattande och djupgående förståelse för de unika utmaningar, men också möjligheter, som branschen varje dag ställs inför.</p>
+          <p>Tillsammans med våra kunder skapar vi värde och driver innovation i en snabbrörlig och konsumentnära värld.</p>
         </div>
       </div>
       <h2 className="mt-20 mb-5 text-center">Våra expertisområden:</h2>
