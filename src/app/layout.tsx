@@ -9,9 +9,9 @@ const syne = Syne({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'About Consulting',
-  description:
-    // 'Taking FMCG to the next level',
-    'About Consulting',
+  description: `
+    Din nyckel till framgång inom retail och dagligvaruhandeln. Vi fokuserar på projekt, interimslösningar och kompetensutveckling med djup erfarenhet från branschen.
+  `,
 }
 
 export default function RootLayout({
