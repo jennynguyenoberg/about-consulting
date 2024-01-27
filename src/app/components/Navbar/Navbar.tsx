@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from 'next/link'
 import NavbarButton from './NavbarButton/NavbarButton'
 import styles from './Navbar.module.scss'
@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="px-11 py-5 flex justify-between border-b-2 border-salmon-500 gap-16">
         <div className="flex items-center">
           <Link href="/">
-            <Image src="/logo.svg" alt="Logo" width={62} height={62} />
+            <Image src="/logo.svg" alt="Logo" width={82} height={82} />
           </Link>
         </div>
 

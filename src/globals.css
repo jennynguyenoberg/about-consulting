@@ -12,7 +12,8 @@
 
 body{
   overflow: hidden;
-  cursor: wait;
+  font-size: 1.1rem;
+  /* cursor: wait; */
 }
 
 :root {
@@ -62,10 +63,6 @@ label {
   font-size: 2.25rem;
 } */
 
-p {
-  font-size: 1.1rem;
-  line-height: 1.55rem;
-} 
 
 input, 
 li, 

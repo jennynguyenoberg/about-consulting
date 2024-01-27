@@ -2,7 +2,7 @@
 import { useState, FormEvent, useEffect } from 'react';
 import { format } from 'date-fns';
 import { supabase } from "../../utils/supabase";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 export default function Footer() {

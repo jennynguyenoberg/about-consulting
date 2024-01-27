@@ -1,5 +1,5 @@
 'use client'
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { useEffect } from "react";
 
 export default function HeroContact() {
@@ -29,7 +29,7 @@ export default function HeroContact() {
       </div>
       <div className="py-20 bg-salmon-500 flex justify-center items-center">
         <div className="w-1/2 flex justify-center items-center">
-          <Image src="/marika_profile.jpg" alt="Profile image of Marika Hjorth" width={350} height={350} className="rounded-full flex items-center" />
+          <Image src="/marika_profile.jpg" alt="Profile image of Marika Hjorth" width={350} height={350} className="rounded-full flex items-center" priority={true}/>
         </div>
         <div className="w-1/2 flex flex-col items-start pr-36">
           <h2>Marika Hjorth</h2>
