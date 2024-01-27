@@ -7,8 +7,8 @@ export default function RotatingWords() {
       <div className={styles.words}>
         <div className='text-salmon-500'>
           <h1>Apples</h1>
-          <h1>Consulting</h1>
           <h1>Sausages</h1>
+          <h1>Consulting</h1>
           <h1>Schampoo</h1>
           <h1>Milk</h1>
           <h1>Eggs</h1>
