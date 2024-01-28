@@ -6,8 +6,15 @@
   .menu {
     background-color: #004650;
     position: relative;
-    width: 480px;
+    width: 370px;
     height: 650px;
     border-radius: 25px;
   }
 }
+
+// @media (max-width: 1024px) { 
+//   .menu {
+//     width: 200px;
+//     height: 650px;
+//   }
+// }
