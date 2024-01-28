@@ -1,49 +1,49 @@
 .wrapper {
-    box-sizing: content-box;
-    height: 189px;
-    display: flex;
-    margin-bottom: 4rem;
+  box-sizing: content-box;
+  height: 189px;
+  display: flex;
+  margin-bottom: 4rem;
 }
 
 .words {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .words h1 {
-    display: block;
-    height: 130%;
-    padding-left: 1rem;
-    animation: spin_words 10s infinite;
+  display: block;
+  height: 130%;
+  padding-left: 1rem;
+  animation: spin_words 10s infinite;
 }
 
-@keyframes spin_words{
-    10%{
-        transform: translateY(-212%);
-    }
-    25%{
-        transform: translateY(-200%);
-    }
-    35%{
-        transform: translateY(-312%);
-    }
-    50%{
-        transform: translateY(-300%);
-    }
-    60%{
-        transform: translateY(-412%);
-    }
-    75%{
-        transform: translateY(-400%);
-    }
-    85%{
-        transform: translateY(-512%);
-    }
-    100%{
-        transform: translateY(-500%);
-    }
+@keyframes spin_words {
+  10% {
+    transform: translateY(-212%);
+  }
+  25% {
+    transform: translateY(-200%);
+  }
+  35% {
+    transform: translateY(-312%);
+  }
+  50% {
+    transform: translateY(-300%);
+  }
+  60% {
+    transform: translateY(-412%);
+  }
+  75% {
+    transform: translateY(-400%);
+  }
+  85% {
+    transform: translateY(-512%);
+  }
+  100% {
+    transform: translateY(-500%);
+  }
 }
 
-@media (max-width: 1024px) { 
+@media (max-width: 1024px) {
   .wrapper {
     flex-wrap: wrap;
     background-color: aliceblue;
@@ -60,30 +60,30 @@
     height: 30%;
   }
 
-  @keyframes spin_words{
-    10%{
-        transform: translateY(-212%);
+  @keyframes spin_words {
+    10% {
+      transform: translateY(-212%);
     }
-    25%{
-        transform: translateY(-200%);
+    25% {
+      transform: translateY(-200%);
     }
-    35%{
-        transform: translateY(-312%);
+    35% {
+      transform: translateY(-312%);
     }
-    50%{
-        transform: translateY(-300%);
+    50% {
+      transform: translateY(-300%);
     }
-    60%{
-        transform: translateY(-412%);
+    60% {
+      transform: translateY(-412%);
     }
-    75%{
-        transform: translateY(-400%);
+    75% {
+      transform: translateY(-400%);
     }
-    85%{
-        transform: translateY(-512%);
+    85% {
+      transform: translateY(-512%);
     }
-    100%{
-        transform: translateY(-500%);
+    100% {
+      transform: translateY(-500%);
     }
+  }
 }
- }

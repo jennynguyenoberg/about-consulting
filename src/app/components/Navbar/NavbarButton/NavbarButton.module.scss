@@ -9,13 +9,13 @@
   top: 0;
   right: 0;
   overflow: hidden;
-  color: #DEE0E9;
+  color: #dee0e9;
 
   .slider {
     position: relative;
     height: 100%;
     width: 100%;
-    
+
     .element {
       height: 100%;
       width: 100%;
@@ -23,7 +23,7 @@
       align-items: center;
       justify-content: center;
       text-transform: uppercase;
-  
+
       &:nth-of-type(2) {
         position: absolute;
         top: 100%;
@@ -31,4 +31,3 @@
     }
   }
 }
-

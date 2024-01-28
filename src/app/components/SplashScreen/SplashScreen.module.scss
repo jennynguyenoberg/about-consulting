@@ -1,4 +1,4 @@
-.introduction{
+.introduction {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -6,25 +6,25 @@
   justify-content: center;
   position: fixed;
   z-index: 99;
-  background-color: #50192F;
+  background-color: #50192f;
 
   svg {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: calc(100% + 300px);
-      
-      path {
-          fill: #50192F;
-      }
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 300px);
+
+    path {
+      fill: #50192f;
+    }
   }
 
   p {
-      display: flex;
-      color: #F99F7E;
-      font-size: 42px;
-      align-items: center;
-      position: absolute;
-      z-index: 1;
+    display: flex;
+    color: #f99f7e;
+    font-size: 42px;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
   }
 }
