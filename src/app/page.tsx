@@ -37,7 +37,7 @@ export default function Home(): JSX.Element {
   return (
     <main className="pt-28">
       <div>
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           {isLoading && <SplashScreen />}
         </AnimatePresence>
         <Hero />
