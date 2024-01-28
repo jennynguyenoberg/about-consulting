@@ -5,16 +5,9 @@
 
   .menu {
     background-color: #004650;
+    border-radius: 25px;
+    height: 650px;
     position: relative;
     width: 370px;
-    height: 650px;
-    border-radius: 25px;
   }
 }
-
-// @media (max-width: 1024px) {
-//   .menu {
-//     width: 200px;
-//     height: 650px;
-//   }
-// }

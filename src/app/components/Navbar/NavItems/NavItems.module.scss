@@ -1,20 +1,20 @@
 .nav {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
+  justify-content: space-between;
   padding: 100px 40px 50px 40px;
-  box-sizing: border-box;
 
   .body {
     display: flex;
-    gap: 10px;
     flex-direction: column;
+    gap: 10px;
 
     a {
       color: #dee0e9;
-      text-decoration: none;
       font-size: 40px;
+      text-decoration: none;
     }
 
     a:hover {
@@ -27,8 +27,8 @@
     flex-wrap: wrap;
 
     a {
-      width: 50%;
       color: #dee0e9;
+      width: 50%;
     }
 
     a:hover {

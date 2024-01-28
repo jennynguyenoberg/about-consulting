@@ -1,18 +1,18 @@
 .introduction {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
   align-items: center;
+  background-color: #50192f;
+  display: flex;
+  height: 100vh;
   justify-content: center;
   position: fixed;
+  width: 100vw;
   z-index: 99;
-  background-color: #50192f;
 
   svg {
+    height: calc(100% + 300px);
     position: absolute;
     top: 0;
     width: 100%;
-    height: calc(100% + 300px);
 
     path {
       fill: #50192f;
@@ -20,10 +20,10 @@
   }
 
   p {
-    display: flex;
-    color: #f99f7e;
-    font-size: 42px;
     align-items: center;
+    color: #f99f7e;
+    display: flex;
+    font-size: 42px;
     position: absolute;
     z-index: 1;
   }

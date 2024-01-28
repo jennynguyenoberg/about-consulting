@@ -1,19 +1,19 @@
 .button {
+  border-radius: 25px;
+  color: #dee0e9;
+  cursor: pointer;
   font-family: 'Syne', serif;
   font-weight: 600;
   height: 40px;
-  width: 40px;
-  border-radius: 25px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
   overflow: hidden;
-  color: #dee0e9;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
 
   .slider {
-    position: relative;
     height: 100%;
+    position: relative;
     width: 100%;
 
     .element {
