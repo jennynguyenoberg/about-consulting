@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -31,13 +31,12 @@ h5,
 button,
 label {
   font-family: var(--font-headings);
-  text-transform: uppercase;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 h1 {
   font-family: 'Koulen', serif;
-  font-size: 10rem;
 }
 
 h2 {
@@ -58,11 +57,6 @@ label {
   font-size: 0.65rem;
 }
 
-/* span {
-  font-family: var(--font-tagline);
-  font-size: 2.25rem;
-} */
-
 input,
 li,
 button {
@@ -74,10 +68,4 @@ em {
   font-family: var(--font-italic);
   font-size: 3.25rem;
   line-height: 4rem;
-}
-
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 5rem;
-  }
 }

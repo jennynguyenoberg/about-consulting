@@ -11,38 +11,42 @@
 
 .intro {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
 .CTA {
-  color: #50192F;
+  color: #50192f;
   display: flex;
   flex-direction: column;
-  justify-content: left;
   gap: 2rem;
-  margin-top: 3.5rem;
-  padding: 3.5rem;
+  justify-content: left;
+  margin-top: -6rem;
+  padding: 2.5rem;
   width: 65%;
 }
 
 .button {
   border-radius: 14px;
-  border: 2px solid #50192F;
-  color: #50192F;
+  border: 2px solid #50192f;
+  color: #50192f;
   padding: 4px 50px;
 }
 
 .button:hover {
-  background-color: #50192F;
-  color: #FAE4CD;
+  background-color: #50192f;
+  color: #fae4cd;
 }
 
 @media (min-width: 1024px) {
   .CTA {
-    margin-top: -6.3rem;
-    padding-left: 12.5rem;
+    margin-top: -7rem;
+    padding-left: 7rem;
     width: 55%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .CTA {
+    font-size: 0.8rem;
   }
 }

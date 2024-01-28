@@ -1,8 +1,13 @@
 .wrapper {
-  box-sizing: content-box;
-  height: 189px;
   display: flex;
+  height: 189px;
   margin-bottom: 4rem;
+  padding-left: 2.5rem;
+}
+
+.wrapper h1,
+.words h1 {
+  font-size: 8rem;
 }
 
 .words {
@@ -10,10 +15,9 @@
 }
 
 .words h1 {
-  display: block;
+  animation: spin_words 10s infinite;
   height: 130%;
   padding-left: 1rem;
-  animation: spin_words 10s infinite;
 }
 
 @keyframes spin_words {
@@ -43,24 +47,48 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 600px) {
   .wrapper {
-    flex-wrap: wrap;
-    margin: 0 3.25rem 4rem 3.25rem;
-    height: 89px;
-    width: 80%;
+    height: 49px;
+    margin-bottom: 6rem;
+    width: 100%;
+  }
+
+  .wrapper h1,
+  .words h1 {
+    font-size: 2.75rem;
   }
 
   .words {
-    height: 89px;
+    height: 49px;
   }
 
   .words h1 {
-    padding-left: 0;
     height: 30%;
+    padding-left: 0.6rem;
   }
 }
 
-@media (max-width: 724px) {
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    margin-bottom: 6rem;
+    padding-left: 12.5rem;
+    width: 100%;
+  }
 
+  .wrapper h1,
+  .words h1 {
+    font-size: 10rem;
+  }
+
+  .words h1 {
+    height: 30%;
+    padding-left: 0.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    padding-left: 7rem;
+  }
 }

@@ -2,7 +2,7 @@ import styles from './RotatingWords.module.css'
 
 export default function RotatingWords() {
   return (
-    <section className="">
+    <section className="w-full">
       <div className={styles.wrapper}>
         <h1 className="text-aubergine-500">About</h1>
         <div className={styles.words}>

@@ -33,14 +33,12 @@ export default function Hero() {
 
       <div className={styles.CTA}>
         <p className={styles.para} data-scroll data-scroll-speed="0.7">
-          Din nyckel till framgång inom retail och dagligvaruhandeln. Vi fokuserar på projekt, interimslösningar och kompetensutveckling med djup erfarenhet från branschen.
+          Din nyckel till framgång inom retail och dagligvaruhandeln. Vi
+          fokuserar på projekt, interimslösningar och kompetensutveckling med
+          djup erfarenhet från branschen.
         </p>
         <Link href="/tjanster">
-          <button
-            data-scroll
-            data-scroll-speed="0.7"
-            className={styles.button}
-          >
+          <button data-scroll data-scroll-speed="0.7" className={styles.button}>
             <h4>Upptäck</h4>
           </button>
         </Link>
