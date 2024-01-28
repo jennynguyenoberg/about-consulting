@@ -15,7 +15,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
+    <div className="min-h-screen flex flex-col justify-center">
       <div className={styles.backgroundImage} ref={background}>
         <Image
           src={'/bkg.svg'}
@@ -30,12 +30,10 @@ export default function Hero() {
           <RotatingWords />
         </h1>
       </div>
+
       <div className={styles.CTA}>
         <p className={styles.para} data-scroll data-scroll-speed="0.7">
-          Din nyckel till framgång inom retail och dagligvaruhandeln. <br />
-          Vi fokuserar på projekt, interimslösningar och kompetensutveckling{' '}
-          <br />
-          med djup erfarenhet från branschen.
+          Din nyckel till framgång inom retail och dagligvaruhandeln. Vi fokuserar på projekt, interimslösningar och kompetensutveckling med djup erfarenhet från branschen.
         </p>
         <Link href="/tjanster">
           <button
