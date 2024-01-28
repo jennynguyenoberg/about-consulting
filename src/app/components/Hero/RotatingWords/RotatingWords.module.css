@@ -46,44 +46,20 @@
 @media (max-width: 1024px) {
   .wrapper {
     flex-wrap: wrap;
-    background-color: aliceblue;
-    margin: 0 3.25rem 0 3.25rem;
+    margin: 0 3.25rem 4rem 3.25rem;
     height: 89px;
   }
 
   .words {
-    overflow: hidden;
+    height: 89px;
   }
 
   .words h1 {
     padding-left: 0;
     height: 30%;
   }
+}
 
-  @keyframes spin_words {
-    10% {
-      transform: translateY(-212%);
-    }
-    25% {
-      transform: translateY(-200%);
-    }
-    35% {
-      transform: translateY(-312%);
-    }
-    50% {
-      transform: translateY(-300%);
-    }
-    60% {
-      transform: translateY(-412%);
-    }
-    75% {
-      transform: translateY(-400%);
-    }
-    85% {
-      transform: translateY(-512%);
-    }
-    100% {
-      transform: translateY(-500%);
-    }
-  }
+@media (max-width: 724px) {
+
 }
