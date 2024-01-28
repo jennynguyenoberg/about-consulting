@@ -27,9 +27,9 @@ export default function Home() {
   return (
     <main className="pt-28">
       <div>
-        {/* <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait">
           {isLoading && <SplashScreen />}
-        </AnimatePresence> */}
+        </AnimatePresence>
         <Hero />
         <USPs />
         <ImageCarousel />
