@@ -1,7 +1,7 @@
 export const Links = [
   {
-    title: "Hem",
-    href: '/'
+    title: 'Hem',
+    href: '/',
   },
   // {
   //   title: "Cases",
@@ -16,12 +16,12 @@ export const Links = [
   //   href: '/'
   // },
   {
-    title: "Våra tjänster",
-    href: '/tjanster'
+    title: 'Våra tjänster',
+    href: '/tjanster',
   },
   {
-    title: "Kontakt",
-    href: '/kontakt'
+    title: 'Kontakt',
+    href: '/kontakt',
   },
   // {
   //   title: "Jobb",
@@ -31,12 +31,12 @@ export const Links = [
 
 export const FooterLinks = [
   {
-    title: "Instagram",
-    href: '/'
+    title: 'Instagram',
+    href: '/',
   },
   {
-    title: "LinkedIn",
-    href: '/'
+    title: 'LinkedIn',
+    href: '/',
   },
   // {
   //   title: "Instagram",

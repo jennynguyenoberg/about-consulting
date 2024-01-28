@@ -1,10 +1,10 @@
-import { Links, FooterLinks } from './data';
-import styles from './NavItems.module.scss';
-import { motion, Variants } from 'framer-motion';
+import { Links, FooterLinks } from './data'
+import styles from './NavItems.module.scss'
+import { motion, Variants } from 'framer-motion'
 
 interface Link {
-  href: string;
-  title: string;
+  href: string
+  title: string
 }
 
 const perspective: Variants = {
@@ -17,14 +17,14 @@ const perspective: Variants = {
   }),
   exit: {
     opacity: 0,
-    transition: {duration: 0.5, ease: [0.76, 0, 0.24, 1]}
+    transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] },
   },
-};
+}
 
 const slideIn = {
   initial: {
     opacity: 0,
-    y: 20
+    y: 20,
   },
   enter: (i: number) => ({
     opacity: 1,
@@ -33,7 +33,7 @@ const slideIn = {
   }),
   exit: {
     opacity: 0,
-    transition: {duration: 0.5, ease: [0.76, 0, 0.24, 1]}
+    transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] },
   },
 }
 
@@ -41,43 +41,40 @@ const NavItems: React.FC = () => {
   return (
     <div className={styles.nav}>
       <div className={styles.body}>
-        {
-          Links.map((link: Link, i: number) => {
-            return (
-              <motion.div
-                key={i}
-                custom={i}
-                variants={perspective}
-                animate="enter"
-                exit="exit"
-                initial="initial"
-              >
-                <a href={link.href}>{link.title}</a>
+        {Links.map((link: Link, i: number) => {
+          return (
+            <motion.div
+              key={i}
+              custom={i}
+              variants={perspective}
+              animate="enter"
+              exit="exit"
+              initial="initial"
+            >
+              <a href={link.href}>{link.title}</a>
             </motion.div>
-          )})
-        }
+          )
+        })}
       </div>
 
       <div className={styles.footer}>
-        {
-          FooterLinks.map((link: Link, i: number) => {
-            return (
-              <motion.a
-                href={link.href}
-                variants={slideIn}
-                custom={i}
-                animate="enter"
-                exit="exit"
-                initial="initial"
-              >
-                {link.title}
-              </motion.a>
-            )
-          })
-        }
+        {FooterLinks.map((link: Link, i: number) => {
+          return (
+            <motion.a
+              href={link.href}
+              variants={slideIn}
+              custom={i}
+              animate="enter"
+              exit="exit"
+              initial="initial"
+            >
+              {link.title}
+            </motion.a>
+          )
+        })}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default NavItems;
+export default NavItems

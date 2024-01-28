@@ -3,7 +3,7 @@ export const metadata = {
   // description: "",
 }
 
-export default function Second() { 
+export default function Second() {
   return (
     <div>
       <h3>Second case</h3>

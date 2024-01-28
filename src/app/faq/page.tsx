@@ -3,7 +3,7 @@ export const metadata = {
   // description: "",
 }
 
-export default function FAQ() { 
+export default function FAQ() {
   return (
     <div>
       <h3>FAQ</h3>
