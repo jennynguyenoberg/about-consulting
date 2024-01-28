@@ -39,6 +39,11 @@ export default function Navbar() {
 
         <div className="hidden lg:flex lg:items-center lg:gap-16">
           <div>
+            <Link href="/">
+              <h4 className="text-aubergine-500 hover:underline">Hem</h4>
+            </Link>
+          </div>
+          <div>
             <Link href="/tjanster">
               <h4 className="text-aubergine-500 hover:underline">Våra tjänster</h4>
             </Link>
