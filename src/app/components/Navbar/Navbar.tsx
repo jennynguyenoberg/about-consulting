@@ -29,8 +29,8 @@ export default function Navbar() {
 
   return (
     <nav className="fixed w-full bg-apricot-500 z-50">
-      <div className="px-11 py-5 flex lg:justify-between border-b-2 border-salmon-500 gap-16">
-        <div className="flex items-center">
+      <div className="px-5 py-5 flex lg:justify-between border-b-2 border-salmon-500 gap-16">
+        <div className="flex items-left">
           <Link href="/">
             <Image src="/logo.svg" alt="Logo" width={82} height={82} />
           </Link>
