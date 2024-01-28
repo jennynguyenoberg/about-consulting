@@ -1,12 +1,12 @@
 import styles from './RotatingWords.module.css'
 
-export default function RotatingWords() { 
+export default function RotatingWords() {
   return (
-    <section className=''>
+    <section className="">
       <div className={styles.wrapper}>
-        <h1 className='text-aubergine-500'>About</h1>
+        <h1 className="text-aubergine-500">About</h1>
         <div className={styles.words}>
-          <div className='text-salmon-500'>
+          <div className="text-salmon-500">
             <h1>Apples</h1>
             <h1>Sausages</h1>
             <h1>Schampoo</h1>
