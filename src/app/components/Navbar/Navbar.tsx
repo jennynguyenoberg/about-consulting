@@ -9,7 +9,7 @@ import NavItems from './NavItems/NavItems'
 
 const variants = {
   open: {
-    width: 480,
+    width: 370,
     height: 650,
     top: '-25px',
     right: '-25px',
@@ -30,14 +30,14 @@ export default function Navbar() {
 
   return (
     <nav className='fixed w-full bg-apricot-500 z-50'>
-      <div className="px-11 py-5 flex justify-between border-b-2 border-salmon-500 gap-16">
+      <div className="px-11 py-5 flex lg:justify-between border-b-2 border-salmon-500 gap-16">
         <div className="flex items-center">
           <Link href="/">
             <Image src="/logo.svg" alt="Logo" width={82} height={82} />
           </Link>
         </div>
 
-        <div className="flex items-center gap-16">
+        <div className="hidden lg:flex lg:items-center lg:gap-16">
           <div>
             <Link href="/tjanster">
               <h4 className="text-aubergine-500 hover:underline">Våra tjänster</h4>
@@ -65,6 +65,7 @@ export default function Navbar() {
           </div>
           <div className='pr-10'/>
 
+        </div>
           <div className={styles.header}>
             <motion.div
               className={styles.menu}
@@ -78,7 +79,6 @@ export default function Navbar() {
             </motion.div>
             <NavbarButton isActive={isActive} setIsActive={setIsActive} />
           </div>
-        </div>
       </div>
     </nav>
   )

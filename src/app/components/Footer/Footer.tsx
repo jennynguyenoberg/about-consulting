@@ -47,12 +47,12 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="bg-aubergine-500 text-salmon-500 px-14 py-14">
+    <footer className="bg-aubergine-500 text-salmon-500 p-14">
       <div className="pb-40">
         <Image src="/logomark.svg" alt="Logomark" width={62} height={62} />
       </div>
 
-      <div className="flex justify-between">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
         <div className="flex flex-col justify-between gap-16">
           <div>
             <h3 className="mb-2">About consulting</h3>
@@ -102,7 +102,7 @@ export default function Footer() {
               <div>
                 <div className="mt-6">
                   <input
-                    className="pr-28 border-b-2 focus:outline-none placeholder:text-salmon-500 bg-aubergine-500"
+                    className="pr-40 lg:pr-20 border-b-2 focus:outline-none placeholder:text-salmon-500 bg-aubergine-500"
                     type="email"
                     id="email"
                     value={email}

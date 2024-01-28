@@ -28,7 +28,7 @@ export default function Hero() {
       <div className={styles.intro}>
           <h1 data-scroll data-scroll-speed="0.7"><RotatingWords /></h1>
       </div>
-      <div className='flex flex-col gap-10 items-left w-9/12 pr-96 pl-4'>
+      <div className='flex flex-col gap-10 lg:items-left lg:w-9/12 lg:pr-96 px-14 lg:pl-4'>
         <p className='text-aubergine-500' data-scroll data-scroll-speed="0.7">
           Din nyckel till framgång inom retail och dagligvaruhandeln. <br/>Vi fokuserar på projekt, interimslösningar och kompetensutveckling <br />med djup erfarenhet från branschen.
         </p>
