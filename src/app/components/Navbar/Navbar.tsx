@@ -9,7 +9,7 @@ import NavItems from './NavItems/NavItems'
 
 const variants = {
   open: {
-    width: 370,
+    width: 330,
     height: 650,
     top: '-25px',
     right: '-25px',

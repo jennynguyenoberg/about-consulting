@@ -7,10 +7,9 @@ import MissionText from './components/MissionText/MissionText'
 import USPs from './components/USPs/USPs'
 import { AnimatePresence } from 'framer-motion'
 import SplashScreen from './components/SplashScreen/SplashScreen'
-import LocomotiveScroll from 'locomotive-scroll';
 
-export default function Home(): JSX.Element {
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+export default function Home() {
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     ;(async () => {
@@ -20,12 +19,12 @@ export default function Home(): JSX.Element {
       }
 
       setTimeout(() => {
-        setIsLoading(false);
-        document.body.style.cursor = 'default';
-        window.scrollTo(0, 0);
-      }, 0);
-    })();
-  }, []);
+        setIsLoading(false)
+        document.body.style.cursor = 'default'
+        window.scrollTo(0, 0)
+      }, 2000)
+    })()
+  }, [])
 
   return (
     <main className="pt-28">
@@ -40,5 +39,5 @@ export default function Home(): JSX.Element {
         <CTA />
       </div>
     </main>
-  );
+  )
 }
