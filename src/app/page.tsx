@@ -14,7 +14,18 @@ export default function Home() {
   useEffect(() => {
     ;(async () => {
       const LocomotiveScroll = (await import('locomotive-scroll')).default
-      const locomotiveScroll = new LocomotiveScroll()
+      const locomotiveScroll = new LocomotiveScroll({
+        // Add options for touch support
+        touchMultiplier: 2,
+        smooth: true, // Enable smooth scrolling
+        tablet: {
+          breakpoint: 0,
+          smooth: true, // Enable smooth scrolling on tablets
+        },
+        smartphone: {
+          smooth: true, // Enable smooth scrolling on smartphones
+        },
+      })
 
       setTimeout(() => {
         setIsLoading(false)
