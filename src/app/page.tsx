@@ -13,18 +13,11 @@ export default function Home(): JSX.Element {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    (async () => {
-      const scroll = new LocomotiveScroll({
-        el: document.querySelector<HTMLElement>('[data-scroll-container]')!,
-        smooth: true,
-        tablet: {
-          breakpoint: 0,
-          smooth: true,
-        },
-        smartphone: {
-          smooth: true,
-        },
-     });
+    ;(async () => {
+      if (window.innerWidth > 600) {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default
+        const locomotiveScroll = new LocomotiveScroll()
+      }
 
       setTimeout(() => {
         setIsLoading(false);
