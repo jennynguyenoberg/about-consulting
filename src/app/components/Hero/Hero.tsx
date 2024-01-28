@@ -30,8 +30,8 @@ export default function Hero() {
           <RotatingWords />
         </h1>
       </div>
-      <div className="flex flex-col gap-10 lg:items-left lg:w-9/12 lg:pr-96 px-14 lg:pl-4">
-        <p className="text-aubergine-500" data-scroll data-scroll-speed="0.7">
+      <div className={styles.CTA}>
+        <p className={styles.para} data-scroll data-scroll-speed="0.7">
           Din nyckel till framgång inom retail och dagligvaruhandeln. <br />
           Vi fokuserar på projekt, interimslösningar och kompetensutveckling{' '}
           <br />
@@ -41,7 +41,7 @@ export default function Hero() {
           <button
             data-scroll
             data-scroll-speed="0.7"
-            className="text-aubergine-500 px-12 py-1 border-aubergine-500 border-solid border-2 rounded-xl hover:bg-aubergine-500 hover:text-apricot-500"
+            className={styles.button}
           >
             <h4>Upptäck</h4>
           </button>
