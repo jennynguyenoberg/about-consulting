@@ -29,7 +29,7 @@ export default function Vision() {
             Mer än ett konsultbolag. Ett team, vars erbjudande är unikt i sin
             klass. Vi har gedigen erfarenhet av FMCG och retail, allt från tuffa
             förhandlingar till hur du syns bäst i butikshyllan. Dessutom
-            garanterat vi 100% härlig energi.
+            garanterar vi 100% härlig energi.
           </p>
           <h4>Vårt mål</h4>
           <p className="text-3xl">
