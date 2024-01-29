@@ -31,7 +31,7 @@ export default function HeroAbout() {
           </p>
         </div>
       </div>
-      <h2 className="lg:mt-20 lg:mb-5 text-center">Våra expertisområden:</h2>
+      <h2 className="mt-20 mb-20 lg:mt-20 lg:mb-5 text-center">Våra expertisområden:</h2>
     </main>
   )
 }
