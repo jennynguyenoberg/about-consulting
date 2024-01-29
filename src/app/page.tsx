@@ -13,10 +13,13 @@ export default function Home() {
 
   useEffect(() => {
     ;(async () => {
-      if (window.innerWidth > 600) {
-        const LocomotiveScroll = (await import('locomotive-scroll')).default
-        const locomotiveScroll = new LocomotiveScroll()
-      }
+      const LocomotiveScroll = (await import('locomotive-scroll')).default
+      const locomotiveScroll = new LocomotiveScroll({
+        smooth: true,
+        smartphone: {
+          smooth: true
+        }
+      })
 
       setTimeout(() => {
         setIsLoading(false)
