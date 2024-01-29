@@ -33,6 +33,6 @@
     "types.d.ts",
     ".next/types/**/*.ts",
     "src/app/tjanster/page.tsx"
-  ],
+, "src/app/page.jsx"  ],
   "exclude": ["node_modules"]
 }
