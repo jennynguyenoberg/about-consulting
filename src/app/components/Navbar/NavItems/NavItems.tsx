@@ -62,6 +62,8 @@ const NavItems: React.FC = () => {
           return (
             <motion.a
               href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
               variants={slideIn}
               custom={i}
               animate="enter"

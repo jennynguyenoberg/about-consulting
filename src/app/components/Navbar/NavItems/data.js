@@ -32,11 +32,11 @@ export const Links = [
 export const FooterLinks = [
   {
     title: 'Instagram',
-    href: '/',
+    href: 'https://www.instagram.com/aboutconsulting.se/',
   },
   {
     title: 'LinkedIn',
-    href: '/',
+    href: 'https://www.linkedin.com/company/about-consulting-ab/',
   },
   // {
   //   title: "Instagram",
