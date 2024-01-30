@@ -7,6 +7,7 @@ import MissionText from './components/MissionText/MissionText'
 import USPs from './components/USPs/USPs'
 import { AnimatePresence } from 'framer-motion'
 import SplashScreen from './components/SplashScreen/SplashScreen'
+import LocomotiveScroll from 'locomotive-scroll'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
