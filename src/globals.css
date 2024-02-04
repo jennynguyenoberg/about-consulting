@@ -11,7 +11,7 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   font-size: 1.1rem;
   /* cursor: wait; */
 }
