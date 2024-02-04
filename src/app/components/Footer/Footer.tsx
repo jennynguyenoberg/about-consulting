@@ -49,7 +49,7 @@ export default function Footer() {
   }, [])
 
   return (
-    <footer className="bg-aubergine-500 text-salmon-500 p-14">
+    <footer className="bg-aubergine-500 text-salmon-500 p-9">
       <div className="pb-40">
         <Image src="/logomark.svg" alt="Logomark" width={62} height={62} />
       </div>
@@ -115,7 +115,7 @@ export default function Footer() {
               <div>
                 <div className="mt-6">
                   <input
-                    className="pr-14 md:pr-52 lg:pr-14 border-b-2 focus:outline-none placeholder:text-salmon-500 bg-aubergine-500"
+                    className="pr-16 md:pr-52 lg:pr-14 border-b-2 focus:outline-none placeholder:text-salmon-500 bg-aubergine-500"
                     type="email"
                     id="email"
                     value={email}

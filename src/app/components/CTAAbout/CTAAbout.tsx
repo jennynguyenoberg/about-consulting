@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 export default function CTAAbout() {
   return (
-    <section className="flex flex-col gap-5 p-20 lg:mt-28 lg:py-40 lg:px-96 text-dove-500 text-center bg-kale-500">
-      <em className="text-5xl lg:text-7xl">
+    <section className="flex flex-col gap-5 py-20 px-10 lg:mt-28 lg:py-40 lg:px-96 text-dove-500 text-center bg-kale-500">
+      <em className="text-4xl lg:text-7xl">
         Upptäck hur About kan förändra ditt företag
       </em>
       <div className="my-8">
