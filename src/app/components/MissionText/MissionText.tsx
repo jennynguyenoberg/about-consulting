@@ -7,7 +7,7 @@ export default function MissionText() {
         <em className="text-3xl lg:text-5xl">
           {' '}
           hittar du ett engagerat team med unik sammansättning av
-          specialistkompetens och erfarenhet inom FMCG & retail. Tillsammans
+          specialistkompetens och erfarenhet inom FMCG och retail. Tillsammans
           blir vi en träffsäker partner för ditt bolag – från ax till limpa.
         </em>
       </p>

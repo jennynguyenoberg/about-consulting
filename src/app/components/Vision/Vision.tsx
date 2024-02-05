@@ -21,7 +21,7 @@ export default function Vision() {
             </em>
             "
           </p>
-          <h4 className="pt-10">— Marika Hjorth, Medgrundare & VD</h4>
+          <h4 className="pt-10">— Marika Hjorth, Medgrundare och VD</h4>
         </div>
         <div className="py-20 px-10 lg:px-14 flex gap-8 flex-col">
           <h4>Vårt team</h4>
@@ -29,7 +29,7 @@ export default function Vision() {
             Mer än ett konsultbolag. Ett team, vars erbjudande är unikt i sin
             klass. Vi har gedigen erfarenhet av FMCG och retail, allt från tuffa
             förhandlingar till hur du syns bäst i butikshyllan. Dessutom
-            garanterat vi 100% härlig energi.
+            garanterar vi 100% härlig energi.
           </p>
           <h4>Vårt mål</h4>
           <p className="text-2xl lg:text-3xl">

@@ -40,7 +40,7 @@ export default function HeroContact() {
         </div>
         <div className="flex flex-col items-start lg:pr-36">
           <h2>Marika Hjorth</h2>
-          <em className="text-xl mb-5">Medgrundare & VD</em>
+          <em className="text-xl mb-5">Medgrundare och VD</em>
           <p className="text-xl mb-8">
             Strateg och grundare med en omfattande meritlista inom FMCG,
             ledarskap och strategisk tillväxt. Tidigare erfarenhet som
